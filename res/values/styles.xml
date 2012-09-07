@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="styleName" parent="android:Widget.Button">
+        <item name="android:focusable">false</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+    </style>
+</resources>

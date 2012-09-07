@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#bbbbbb" >
+
+  <LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView 
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_gravity="left"
+     android:text="Create Card"
+     android:textColor="#000033"
+     android:orientation="vertical"/>
+    	<LinearLayout 
+    	  android:layout_width="fill_parent"
+    	  android:layout_height="wrap_content"
+    	  android:orientation="horizontal"
+    	  android:layout_weight="2">
+    	    <ScrollView
+    	      android:layout_width="fill_parent"
+    	  	  android:layout_height="fill_parent"
+    	  	  android:layout_weight="1">
+    		<EditText android:id="@+id/text_name"
+    		  android:layout_width="fill_parent"
+    		  android:layout_height="fill_parent"
+    		  android:hint="Enter the Name"
+    		  android:maxLines="1"
+    		   android:textSize="13sp"/>
+    		</ScrollView>
+    
+    		<ScrollView
+    	      android:layout_width="fill_parent"
+    	  	  android:layout_height="fill_parent"
+    	  	  android:layout_weight="1">
+    		<EditText android:id="@+id/text_school"
+    		  android:layout_width="fill_parent"
+    		  android:layout_height="fill_parent"
+    		  android:hint="Enter the School"
+    		  android:maxLines="1"
+    		  android:textSize="13sp"/>
+    		</ScrollView>
+  
+    	</LinearLayout>
+    	<LinearLayout 
+    	  android:layout_width="fill_parent"
+    	  android:layout_height="wrap_content"
+    	  android:orientation="horizontal"
+    	  android:layout_weight="2">
+    	    <ScrollView
+    	      android:layout_width="fill_parent"
+    	  	  android:layout_height="fill_parent"
+    	  	  android:layout_weight="1">
+    		<EditText android:id="@+id/text_phone"
+    		  android:layout_width="fill_parent"
+    		  android:layout_height="fill_parent"
+    		  android:hint="Enter the Phone number"
+    		  android:maxLines="1"
+    		   android:textSize="13sp"/>
+    		</ScrollView>
+    
+    		<ScrollView
+    	      android:layout_width="fill_parent"
+    	  	  android:layout_height="fill_parent"
+    	  	  android:layout_weight="1">
+    		<EditText android:id="@+id/text_email"
+    		  android:layout_width="fill_parent"
+    		  android:layout_height="fill_parent"
+    		  android:hint="Enter the Email"
+    		  android:maxLines="1"
+    		  android:textSize="13sp"/>
+    		</ScrollView>
+  
+    	</LinearLayout>
+    	<LinearLayout 
+    	  android:layout_width="fill_parent"
+    	  android:layout_height="wrap_content"
+    	  android:orientation="horizontal"
+    	  android:layout_weight="2">
+    	    <ScrollView
+    	      android:layout_width="fill_parent"
+    	  	  android:layout_height="wrap_content"
+    	  	  android:layout_weight="1">
+    		<EditText android:id="@+id/text_facebook"
+    		  android:layout_width="fill_parent"
+    		  android:layout_height="wrap_content"
+    		  android:hint="Enter the Facebook user"
+    		  android:maxLines="1"
+    		  android:textSize="13sp"/>
+    		</ScrollView>
+    
+    		<ScrollView
+    	      android:layout_width="fill_parent"
+    	  	  android:layout_height="wrap_content"
+    	  	  android:layout_weight="1">
+    		<EditText android:id="@+id/text_address"
+    		  android:layout_width="fill_parent"
+    		  android:layout_height="wrap_content"
+    		  android:hint="Enter the Address"
+    		  android:maxLines="1"
+    		   android:textSize="13sp"/>
+    		</ScrollView>
+  
+    	</LinearLayout>
+    	
+    </LinearLayout>
+  <TextView 
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_gravity="left"
+     android:text="Encode Contact"
+     android:textColor="#000033"
+     android:orientation="vertical"/>  
+ <AutoCompleteTextView 
+	android:id="@+id/txtPhoneNo"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:textSize="13sp"
+	android:maxLines="1"
+ 	android:hint="Enter the Name of contact that is to be created"/>   
+ <TextView 
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_gravity="left"
+     android:text="Encode String"
+     android:textColor="#000033"
+     android:orientation="vertical"/>	    
+<EditText android:id="@+id/text_string"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:textSize="13sp"
+    android:maxLines="1"
+    android:hint="Enter the any String that is to be Created"/>
+
+ <LinearLayout
+    	android:orientation="horizontal"
+    	android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:gravity="center"
+    	android:layout_weight="3">   
+    	<Button
+        	android:id="@+id/btEncodeCard"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:textSize="13px"
+        	android:text="Encode Card"/>
+    	
+    	<Button
+        	android:id="@+id/btEncodeContact"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_weight="1"
+        	android:textSize="13px"
+        	android:text="Encode Contact"/>
+    
+		<Button android:id="@+id/btEncodeString"
+	    	android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:layout_weight="1"
+	    	android:textSize="13px"
+	    	android:text="Encode String"/>   
+	   
+	    </LinearLayout>
+</LinearLayout>
+

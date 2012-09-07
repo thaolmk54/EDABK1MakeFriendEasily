@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+
+  <SurfaceView android:id="@+id/preview_view"
+               android:layout_width="fill_parent"
+               android:layout_height="fill_parent"
+               android:layout_centerInParent="true"/>
+
+  <edabk.org.qrcode.ViewfinderView
+      android:id="@+id/viewfinder_view"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:background="@color/transparent"/>
+
+  <LinearLayout android:id="@+id/result_view"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/blackscreen"
+                android:visibility="gone"
+                android:padding="4dip">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="5"
+        android:gravity="top">
+        
+        <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_weight="4"
+          android:padding="9dip">
+         
+       <LinearLayout
+          android:orientation= "horizontal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content" 
+          android:layout_marginLeft="9dp">
+		<ScrollView
+		    	  android:layout_width="wrap_content"
+		    	  android:layout_height="wrap_content">
+		<TextView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="left"
+                  android:text="Name: "
+                  android:textColor="#3333CC"
+                  android:textSize="18sp"
+                  android:clickable="true"/>
+		</ScrollView>
+		<ScrollView
+		    	  android:layout_width="wrap_content"
+		    	  android:layout_height="fill_parent">
+		<TextView android:id="@+id/type_field_view_name"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="left"
+                  android:state_pressed="true"
+                  android:state_focused="true"
+               	  android:divider="#00000000"
+    			  android:dividerHeight="0px"
+                  android:textSize="17sp"
+                  android:clickable="true"
+                  android:textColor="@color/text_color"
+                  />
+		</ScrollView>
+		
+		</LinearLayout>
+		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#285A8C" >
+        </LinearLayout>
+		<LinearLayout
+          	android:orientation="horizontal"
+          	android:layout_width="wrap_content"
+          	android:layout_height="wrap_content"
+          	android:padding="9dip" >
+		<ScrollView
+		    	  android:layout_width="wrap_content"
+		    	  android:layout_height="wrap_content">
+		<TextView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="left"
+                  android:text="School: "
+                  android:textColor="#3333CC"
+                  android:textSize="18sp"
+                  android:clickable="true"/>
+		</ScrollView>
+		<ScrollView
+		    	  android:layout_width="wrap_content"
+		    	  android:layout_height="fill_parent">
+		<TextView android:id="@+id/type_field_view_school"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="left"
+                  android:state_pressed="true"
+                  android:state_focused="true"
+               	  android:divider="#00000000"
+    			  android:dividerHeight="0px"
+                  android:textSize="17sp"
+                  android:clickable="true"
+                  android:textColor="@color/text_color"/>
+		</ScrollView>
+	
+		</LinearLayout>
+		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#285A8C" >
+        </LinearLayout>
+		<LinearLayout
+          	android:orientation="horizontal"
+          	android:layout_width="wrap_content"
+          	android:layout_height="wrap_content"
+          	android:padding="9dip">
+		<ScrollView
+		    	  android:layout_width="wrap_content"
+		    	  android:layout_height="wrap_content">
+		<TextView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="left"
+                  android:text="Phone number: "
+                  android:textColor="#3333CC"
+                  android:textSize="18sp"
+                  android:clickable="true"/>
+		</ScrollView>
+		<ScrollView
+		    	  android:layout_width="wrap_content"
+		    	  android:layout_height="fill_parent">
+		<TextView android:id="@+id/type_field_view_phonenb"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="left"
+                  android:state_pressed="true"
+                  android:state_focused="true"
+               	  android:divider="#00000000"
+    			  android:dividerHeight="0px"
+                  android:textSize="17sp"
+                  android:clickable="true"
+                  android:textColor="@color/text_color"/>
+		</ScrollView>
+		
+		</LinearLayout>
+		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#285A8C" >
+        </LinearLayout>
+		<LinearLayout
+          	android:orientation="horizontal"
+          	android:layout_width="wrap_content"
+          	android:layout_height="wrap_content"
+          	android:padding="9dip">
+		<ScrollView
+		    	  android:layout_width="wrap_content"
+		    	  android:layout_height="wrap_content">
+		<TextView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="left"
+                  android:text="Email: "
+                  android:textColor="#3333CC"
+                  android:textSize="18sp"
+                  android:clickable="true"/>
+		</ScrollView>
+		<ScrollView
+		    	  android:layout_width="wrap_content"
+		    	  android:layout_height="fill_parent">
+		<TextView android:id="@+id/type_field_view_email"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="left"
+                  android:state_pressed="true"
+                  android:state_focused="true"
+               	  android:divider="#00000000"
+    			  android:dividerHeight="0px"
+                  android:textSize="17sp"
+                  android:clickable="true"
+                  android:textColor="@color/text_color"/>
+		</ScrollView>
+		
+		</LinearLayout>
+		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#285A8C" >
+        </LinearLayout>
+		<LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="9dip">
+		<ScrollView
+		    	  android:layout_width="wrap_content"
+		    	  android:layout_height="wrap_content">
+		<TextView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="left"
+                  android:text="Facebook: "
+                  android:textColor="#3333CC"
+                  android:textSize="17sp"
+                  android:clickable="true"
+                  />
+		</ScrollView>
+		<ScrollView
+		    	  android:layout_width="wrap_content"
+		    	  android:layout_height="fill_parent">
+		<TextView android:id="@+id/type_field_view_facebook"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="left"
+                  android:state_pressed="true"
+                  android:state_focused="true"
+               	  android:divider="#00000000"
+    			  android:dividerHeight="0px"
+                  android:textSize="17sp"
+                  android:clickable="true"
+                  android:textColor="@color/text_color"/>
+		</ScrollView>
+		
+		</LinearLayout>
+		<LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#285A8C" >
+        </LinearLayout>
+		<LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="9dip">
+		<ScrollView
+		    	  android:layout_width="wrap_content"
+		    	  android:layout_height="wrap_content">
+		<TextView 
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="left"
+                  android:text="Address: "
+                  android:textColor="#3333CC"
+                  android:textSize="18sp"
+                  android:clickable="true"/>
+		</ScrollView>
+		<ScrollView
+		    	  android:layout_width="wrap_content"
+		    	  android:layout_height="fill_parent">
+		<TextView android:id="@+id/type_field_view_add"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="left"
+                  android:state_pressed="true"
+                  android:state_focused="true"
+               	  android:divider="#00000000"
+    			  android:dividerHeight="0px"
+                  android:textSize="17sp"
+                  android:clickable="true"
+                  android:textColor="@color/text_color"/>
+		</ScrollView>
+		
+		</LinearLayout>	
+		
+		</LinearLayout>
+		<LinearLayout
+		     android:orientation="vertical"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+           android:layout_weight="1"
+          android:layout_marginRight="5dip">
+		
+		<ImageView
+                  android:layout_width="wrap_content"
+        		  android:layout_height="wrap_content"
+        		  android:gravity="right"
+        		  android:src="@drawable/google"
+        		  android:padding="5dip"/>
+        <ImageView
+                  android:layout_width="wrap_content"
+        		  android:layout_height="wrap_content"
+        		  android:gravity="right"
+        		  android:src="@drawable/map"
+        		  android:padding="5dip"/>
+        <ImageView
+                  android:layout_width="wrap_content"
+        		  android:layout_height="wrap_content"
+        		  android:gravity="right"
+        		  android:src="@drawable/call"
+        		  android:padding="5dip"/>
+        <ImageView
+                  android:layout_width="wrap_content"
+        		  android:layout_height="wrap_content"
+        		  android:gravity="right"
+        		  android:src="@drawable/email"
+        		  android:padding="5dip"/>
+        
+		<ImageView
+                  android:layout_width="wrap_content"
+        		  android:layout_height="wrap_content"
+        		  android:gravity="right"
+        		  android:src="@drawable/facebook"
+        		  android:padding="5dip"/>
+        <ImageView
+                  android:layout_width="wrap_content"
+        		  android:layout_height="wrap_content"
+        		  android:gravity="right"
+        		  android:src="@drawable/map"
+        		  android:padding="5dip"/>
+
+		</LinearLayout>
+		
+        
+		</LinearLayout>
+
+    <LinearLayout android:id="@+id/result_button_view"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:gravity="center">
+
+      <Button android:layout_width="0dip"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:textSize="14sp"
+              android:visibility="gone"/>
+
+      <Button android:layout_width="0dip"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:textSize="14sp"
+              android:visibility="gone"/>
+
+      <Button android:layout_width="0dip"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:textSize="14sp"
+              android:visibility="gone"/>
+
+      <Button android:layout_width="0dip"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:textSize="14sp"
+              android:visibility="gone"/>
+
+      <Button android:id="@+id/shopper_button"
+              android:layout_width="0dip"
+              android:layout_height="wrap_content"
+              android:layout_weight="1"
+              android:textSize="14sp"
+              android:drawableLeft="@drawable/shopper_icon"
+              android:drawablePadding="4dip"
+              
+              android:visibility="gone"/>
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <TextView android:id="@+id/status_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:background="@color/transparent"
+            android:text="@string/msg_default_status"
+            android:textColor="@color/status_text"
+            android:textSize="14sp"/>
+
+</FrameLayout>
